@@ -1,3 +1,5 @@
 language: objective-c
-xcode_project: Transparent Image Viewer.xcodeproj # path to your xcodeproj folder
-xcode_scheme: Transparent Image Viewer
+before_install:
+    - brew update
+    - brew install xctool
+script: xctool -project Transparent Image Viewer.xcodeproj -scheme Transparent Image Viewer test
